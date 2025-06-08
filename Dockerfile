@@ -76,6 +76,7 @@ RUN node -v && npm -v
 
 # Now install verilog2factorio
 RUN git clone https://github.com/Redcrafter/verilog2factorio.git && cd verilog2factorio && npm install
+COPY ./v2f /usr/bin/v2f
 
 VOLUME ["/chisel"]
 WORKDIR /chisel
