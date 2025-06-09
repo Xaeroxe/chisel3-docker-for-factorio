@@ -1,0 +1,11 @@
+[package]
+name = "v2f-adapter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "3.0.0", features = ["derive"] }
+
+[profile.release]
+opt-level = "s"
+strip = "symbols"
